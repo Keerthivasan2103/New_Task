@@ -1,62 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Task</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="bg-blue-600 text-white p-4 flex justify-between">
-        <div class="">sriramachandra</div>
-        <ul class="flex gap-4">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contactus</a></li>
-            <li><a href="">Blogs</a></li>
-        </ul>
+      <div class="">sriramachandra</div>
+      <ul class="flex gap-4">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contactus</a></li>
+        <li><a href="">Blogs</a></li>
+      </ul>
     </header>
 
-    <div class="max-w-md mx-auto bg-gray-100 mt-6 p-6 rounded shadow">
-        <form class="space-y-3">
-            <label for="name" >Name:</label> 
-            <input class="w-full border p-2 rounded"  type="text"   placeholder="Enter Your Name.." pattern="[A-Za-z]+" required ><br>
-            <label for="email">Email Address :</label>
-            <input class="w-full border p-2 rounded" type="email" placeholder="Enter Your Email"> <br>
-            <label for="number">Phone :</label>
-            <input class="w-full border p-2 rounded"  type="number" placeholder="Enter your 10 digit number"><br>
-            <label for="dob">DOB</label>
-            <input class="w-full border p-2 rounded"  type="date" ><br>
-            <label for="gender">Gender</label>
-            <select class="w-full border p-2 rounded">
-                <option>Male</option>
-                <option>Female</option>
-            </select><br>
-            <label  class="">Age</label>
-            <select class="w-full border p-2 rounded" >
-                <option>1-15</option>
-                <option>15-30</option>
-            </select><br>
-            <label for="image">Upload Image</label>
-            <input type="file" accept="image/*"><br>
+    <div class="max-w-md mx-auto bg-gray-100 mt-3 p-6 rounded shadow">
+      <form id="userForm" class="space-y-3">
+        <label for="name">Name:</label>
+        <input
+          name="name"
+          class="w-full border p-2 rounded"
+          type="text"
+          placeholder="Enter Your Name.."
+          pattern="[A-Za-z]+"
+          required
+        /><br />
+        <label>Email Address :</label>
+        <input
+          name="email"
+          class="w-full border p-2 rounded"
+          type="email"
+          placeholder="Enter Your Email"
+        />
+        <br />
+        <label>Phone :</label>
+        <input
+          name="phone"
+          class="w-full border p-2 rounded"
+          type="number"
+          placeholder="Enter your 10 digit number"
+        />
+        <br />
+        <label>DOB</label>
+        <input name="dob" class="w-full border p-2 rounded" type="date" />
+        <br />
+        <label>Gender</label>
+        <select name="gender" class="w-full border p-2 rounded">
+          <option>Male</option>
+          <option>Female</option></select
+        ><br />
+        <label class="">Age</label>
+        <select name="age" class="w-full border p-2 rounded">
+          <option>1-15</option>
+          <option>15-30</option></select
+        ><br />
+        <label>Upload Image</label>
+        <input name="image" type="file" accept="image/*" />
+        <br />
 
-            <button class="bg-blue-500 text-white p-2 w-full border rounded">Submit</button>
-
-            
-            
-
-        </form>
+        <button class="bg-blue-500 text-white p-2 w-full border rounded">
+          Submit
+        </button>
+      </form>
     </div>
 
-    <footer class="mt-20 justify-center">
-        <div class="bg-red-300 p-5 flex justify-center">
-            @copyrights sriramachandra Engg College..
-        </div>
-        
+    <footer class="mt-2 justify-center">
+      <div class="bg-red-300 p-4 flex justify-center">
+        @copyrights sriramachandra Engg College..
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
