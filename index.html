@@ -36,6 +36,7 @@
           class="w-full border p-2 rounded"
           type="email"
           placeholder="Enter Your Email"
+          required
         />
         <br />
         <label>Phone :</label>
@@ -44,24 +45,25 @@
           class="w-full border p-2 rounded"
           type="number"
           placeholder="Enter your 10 digit number"
+          required
         />
         <br />
         <label>DOB:</label>
-        <input name="dob" class="w-full border p-2 rounded" type="date" />
+        <input name="dob" class="w-full border p-2 rounded" type="date" required />
         <br />
         <label>Gender:</label>
-        <select name="gender" class="w-full border p-2 rounded">
+        <select name="gender" class="w-full border p-2 rounded" required>
           <option>Male</option>
           <option>Female</option></select
         ><br />
         <label class="">Age:</label>
-        <select name="age" class="w-full border p-2 rounded">
+        <select name="age" class="w-full border p-2 rounded" required>
           <option>1-15</option>
           <option>15-30</option></select
         ><br />
         <div class="pt-1">
           <label class="">Upload Image :</label>
-          <input class="pt-1" name="image" type="file" accept="image/*" />
+          <input class="pt-1" name="image" type="file" accept="image/*" required/>
         </div><br>
         <button class="bg-blue-500 text-white p-2 w-full border rounded">
           Submit
